@@ -1,0 +1,37 @@
+name: "Blogsite"
+title: "Blogsite"
+description: "Lightweight theme"
+
+url: '' 
+baseurl: ''
+
+markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-paginate
+paginate: 8
+paginate_path: /page-:num
+
+#disqus-id: your-disqus-id
+
+source: .
+destination: ./_site
+
+sass:
+    style: :compressed
+    sass_dir: assets/css/
+
+featured_posts_title: Featured Posts
+featured_posts:
+  - url: '#'
+    title: 'Featured post #1'
+  - url: '#'
+    title: 'Featured post #2'
+  - url: '#'
+    title: 'Featured post #3'

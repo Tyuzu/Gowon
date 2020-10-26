@@ -1,0 +1,97 @@
+*{box-sizing:border-box;}
+body{font:16px/1.5 "Georgia",serif;margin:0 auto;max-width:66ch;padding:1rem;}
+h1,h2,h3,h4,h5,h6{font-family:"Helvetica Neue","Helvetica","Arial",sans-serif;margin:2rem 0 1rem;}
+ul li, ol li{margin-top:0.5rem;}
+a{color:rgb(118, 19, 231);text-decoration: none ;}
+a:visited{color:rgb(93, 39, 243);}
+a:hover{color:rgba(11, 206, 27, 0.548);}
+img{height:auto;max-width:100%;}
+pre{border: 1px solid lightgrey;overflow:auto;}
+code{color:orangered;display:inline-block;}
+pre code{padding:1rem;}
+blockquote{border-left:5px solid lightgrey;font-size:120%;font-style:italic;margin:2rem 0;padding:1rem;}
+table{border-collapse:collapse;margin:2rem 0;text-align:left;width:100%;}
+tr{border-bottom:1px solid lightgrey;}
+th,td{padding:0.5rem;}
+hr{background:rgb(179, 179, 179);border:0;height:1px;margin:2rem 0;}
+.pagination a {color: blueviolet;font-weight: bold;}
+.coverimg {width: 100px;float: left;padding: 2px 6px;}
+.sitename {color:rgb(19, 217, 35) !important;font-size: 3rem;}
+nav a {font-size: 1.2rem;}
+/* Style each swatch to match the corresponding theme */
+.color-select button:nth-child(2) { background: #72f1b8; border-color: #34294f; }
+.color-select button:nth-child(1) { background: #FFFFFF; border-color: #59316B; }
+.color-select button:nth-child(3) { background: #000000; border-color: #303960; }
+
+.theme-second {
+    --accent-color: #72f1b8;
+    --font-color: #34294f;
+    --link-color: 
+ }
+ 
+ .theme-default {
+     --accent-color: rgb(255, 255, 255);
+     --font-color: rgb(103, 100, 105) 86, 97);
+ }
+ 
+ .theme-third {
+     --accent-color: #000000;
+     --font-color: #ffffff;
+ }
+ 
+ body {
+     background-color: var(--accent-color);
+     color: var(--font-color);
+ }
+ .color-select {
+     margin-top: 8px;
+ }
+ 
+ .color-select button {
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid;
+    border-radius: 9999px;
+    cursor: pointer;
+    height: 20px;
+    margin: 0 0.8rem 0.8rem 0;
+    outline: 0;
+    width: 20px;
+}
+
+    .plypzstp {
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        position: sticky;
+        text-align: center;
+        padding: 0.2rem;
+    }
+
+    #play,
+    #stop {
+        background: none;
+        border: none;
+        cursor: pointer;
+        height: 48px;
+        outline: none;
+        padding: 0;
+        width: 48px;
+        background: white;
+    }
+
+    #play {
+        background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+    }
+
+    #play.played {
+        background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
+    }
+
+    #stop {
+        background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop.svg);
+    }
+
+    #stop.stopped {
+        background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop1.svg);
+    }

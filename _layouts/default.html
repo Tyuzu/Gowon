@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html class="theme-default">
+{% include head.html %}
+<body>
+    {% include header.html %}
+    {% include nav.html %}
+    <main>
+        {{ content }}
+        {% include aside.html %}
+    </main>
+</body>
+{% include footer.html %}
+</html>
